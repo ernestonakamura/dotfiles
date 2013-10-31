@@ -8,3 +8,16 @@ bindkey '^r' history-incremental-search-backward    # [Ctrl-r] - Search backward
 # emacs style
 bindkey '^a' beginning-of-line
 bindkey '^e' end-of-line
+
+#
+# http://ivyl.0xcafe.eu/2013/02/03/refining-zsh/
+#
+export KEYTIMEOUT=1
+
+# ctrl-p ctrl-n history navigation
+bindkey '^P' up-history
+bindkey '^N' down-history
+
+# backspace and ^h working even after returning from command mode
+bindkey '^?' backward-delete-char
+bindkey '^h' backward-delete-char
