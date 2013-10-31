@@ -125,3 +125,6 @@
   enabled = true
 [include]
   path = .gitconfig.user
+[user]
+	name = Ernesto Nakamura
+	email = ernesto@naka.eti.br
