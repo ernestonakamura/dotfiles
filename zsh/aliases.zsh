@@ -21,7 +21,7 @@ alias cdb='cd -'
 # Show human friendly numbers and colors
 alias df='df -h'
 alias ll='ls -alGh'
-alias ls='ls -Gh'
+alias ls='ls -Gh --color'
 alias du='du -h -d 2'
 
 # show me files matching "ls grep"
