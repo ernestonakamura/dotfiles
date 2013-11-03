@@ -21,3 +21,5 @@ bindkey '^N' down-history
 # backspace and ^h working even after returning from command mode
 bindkey '^?' backward-delete-char
 bindkey '^h' backward-delete-char
+
+bindkey '^d' delete-char
