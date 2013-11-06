@@ -124,6 +124,10 @@ Bundle "bling/vim-airline.git"
 Bundle "vim-scripts/TagHighlight.git"
 Bundle "bogado/file-line.git"
 
+" Dash integration
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
+
 " Customization
 " The plugins listed in ~/.vim/.vundles.local will be added here to
 " allow the user to add vim plugins to yadr without the need for a fork.
