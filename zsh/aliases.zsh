@@ -120,6 +120,7 @@ alias ts='thin start'
 alias ms='mongrel_rails start'
 alias tfdl='tail -f log/development.log'
 alias tftl='tail -f log/test.log'
+alias r='touch tmp/restart.txt'
 
 alias ka9='killall -9'
 alias k9='kill -9'
@@ -143,7 +144,7 @@ alias zs='zeus server'
 alias zc='zeus console'
 
 # Rspec
-alias rs='rspec spec'
+alias rs='rspec'
 
 # Sprintly - https://github.com/nextbigsoundinc/Sprintly-GitHub
 alias sp='sprintly'
