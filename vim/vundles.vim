@@ -32,6 +32,7 @@ Bundle "ck3g/vim-change-hash-syntax"
 " Other languages
 Bundle "briancollins/vim-jst"
 Bundle "pangloss/vim-javascript"
+Bundle "rodjek/vim-puppet"
 
 " Html, Xml, Css, Markdown...
 Bundle "claco/jasmine.vim"
@@ -123,6 +124,7 @@ Bundle "skwp/vim-colors-solarized"
 Bundle "bling/vim-airline.git"
 Bundle "vim-scripts/TagHighlight.git"
 Bundle "bogado/file-line.git"
+Bundle "jby/tmux.vim.git"
 
 " Dash integration
 Bundle 'rizzatti/funcoo.vim'
