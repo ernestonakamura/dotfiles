@@ -222,10 +222,13 @@ nmap sk :SplitjoinJoin<cr>
 " ============================
 " Cmd-Shift-R for RSpec
 nmap <silent> <D-R> :call RunRspecCurrentFileConque()<CR>
+nmap <silent> gR :call RunRspecCurrentFileConque()<CR>
 " Cmd-Shift-L for RSpec Current Line
 nmap <silent> <D-L> :call RunRspecCurrentLineConque()<CR>
+nmap <silent> gr :call RunRspecCurrentLineConque()<CR>
 " ,Cmd-R for Last conque command
 nmap <silent> ,<D-R> :call RunLastConqueCommand()<CR>
+nmap <silent> ,gr :call RunLastConqueCommand()<CR>
 
 " Get the current highlight group. Useful for then remapping the color
 map ,hi :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">" . " FG:" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"fg#")<CR>
