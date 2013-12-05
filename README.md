@@ -214,7 +214,7 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
 
 #### Rails
 
- * `Cmd-Shift-R` to use vim-ruby-conque to run a spec file. `Cmd-Shift-L` to run from a line (individual it block), `,Cmd-Shift-R` to rerun the last run command (great for re-running specs)
+ * `Cmd-Shift-R` or `gR` to use vim-ruby-conque to run a spec file. `Cmd-Shift-L` or `gr` to run from a line (individual it block), `,Cmd-Shift-R` or `,gr` to rerun the last run command (great for re-running specs)
  * :Rspec1 and :Rspec2 to switch between rspec versions for the vim-ruby-conque runner
  * `,vv` and `,cc` to switch between view and controller
 
