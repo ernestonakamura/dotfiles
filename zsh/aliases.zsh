@@ -146,6 +146,10 @@ alias zc='zeus console'
 # Rspec
 alias rs='rspec'
 alias sr='spring rspec'
+alias srgm='spring rails g migration'
+alias srdm='spring rake db:migrate'
+alias srdt='spring rake db:migrate'
+alias srdmt='spring rake db:migrate db:test:prepare'
 
 # Sprintly - https://github.com/nextbigsoundinc/Sprintly-GitHub
 alias sp='sprintly'
