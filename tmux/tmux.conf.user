@@ -1,5 +1,1 @@
-# Unbind C-a
-unbind C-a
-set -g prefix C-b
-bind b send-prefix
-
+../my_customizations/tmux.conf.user
