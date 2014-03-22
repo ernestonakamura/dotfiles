@@ -1,0 +1,5 @@
+# Unbind C-a
+unbind C-a
+set -g prefix C-b
+bind b send-prefix
+
