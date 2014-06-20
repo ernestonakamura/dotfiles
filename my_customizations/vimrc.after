@@ -5,7 +5,7 @@
 if has("gui_running")
   set lines=60
   set columns=135
-  set guifont=Inconsolata\ XL:h14,Inconsolata:h17,Monaco:h14
+  set guifont=Inconsolata\ XL:h12,Inconsolata:h17,Monaco:h14
 endif
 
 " Old mappings
