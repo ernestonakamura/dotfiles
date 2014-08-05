@@ -15,7 +15,7 @@ noremap  gK :write<CR>:Rake!<CR>
 
 " rails.vim
 noremap <leader>a :A<CR>
-noremap <leader>r :R<CR>
+noremap <leader>rr :R<CR>
 
 " Relative numbers
 set nonumber
