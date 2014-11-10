@@ -1,1 +1,1 @@
-source ~/.rubotorc
+[ -f ~/.rubotorc ] && source ~/.rubotorc
