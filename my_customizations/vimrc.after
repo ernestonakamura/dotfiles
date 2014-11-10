@@ -1,0 +1,22 @@
+"
+" Link this file in ~/.vimrc.after
+"
+
+if has("gui_running")
+  set lines=60
+  set columns=135
+  set guifont=Inconsolata\ XL:h12,Inconsolata:h17,Monaco:h14
+endif
+
+" Old mappings
+nnoremap gw :w<CR>
+noremap  gk :write<CR>:.Rake!<CR>
+noremap  gK :write<CR>:Rake!<CR>
+
+" rails.vim
+noremap <leader>a :A<CR>
+noremap <leader>rr :R<CR>
+
+" Relative numbers
+set nonumber
+set relativenumber

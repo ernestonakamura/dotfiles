@@ -1,0 +1,9 @@
+#
+# Link this file in ~/.tmux.conf.user
+#
+
+# Unbind C-a and rebind C-b
+unbind C-a
+set -g prefix C-b
+bind b send-prefix
+
