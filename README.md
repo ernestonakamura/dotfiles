@@ -155,6 +155,19 @@ of plugins above to learn more.
  * `Ctrl-o` - Old cursor position - this is a standard mapping but very useful, so included here
  * `Ctrl-i` - opposite of Ctrl-O (again, this is standard)
 
+#### Rails
+
+ * `Cmd-Shift-R` or `gR` to use vim-ruby-conque to run a spec file. `Cmd-Shift-L` or `gr` to run from a line (individual it block), `,Cmd-Shift-R` or `,gr` to rerun the last run command (great for re-running specs)
+ * :Rspec1 and :Rspec2 to switch between rspec versions for the vim-ruby-conque runner
+ * `,vv` and `,cc` to switch between view and controller - these are maps to :Rcontroller and :Rview. Explore the :R<Tab> family of commands for more fun from rails.vim!
+
+#### Surround.vim customizations
+
+ * the `#` key now surrounds with `#{}` for ruby string interpolation, so `ysaw#` (surround around word) `#{foo}`
+ * `=` surrounds with `<%= erb tag %>`; `-` for `<% this %>`. So, `yss=` or `yss-` to wrap code
+ * Surround any word with any character by using these combos: `,'`, `,"`, `,#` and so on. 
+ * Edit anything inside [brackets], "quotes", 'singles', etc by using Cmd+[the character in question]. So to edit inside [brackets] you use `Cmd-[`
+
 #### Search/Code Navigation
 
  * `,f` - instantly Find definition of class (must have exuberant ctags installed)

@@ -120,6 +120,7 @@ alias ts='thin start'
 alias ms='mongrel_rails start'
 alias tfdl='tail -f log/development.log'
 alias tftl='tail -f log/test.log'
+alias r='touch tmp/restart.txt'
 
 alias ka9='killall -9'
 alias k9='kill -9'
@@ -143,7 +144,7 @@ alias zs='zeus server'
 alias zc='zeus console'
 
 # Rspec
-alias rs='rspec spec'
+alias rs='rspec'
 alias sr='spring rspec'
 alias srgm='spring rails g migration'
 alias srdm='spring rake db:migrate'
@@ -154,3 +155,7 @@ alias srdmt='spring rake db:migrate db:test:prepare'
 alias sp='sprintly'
 # spb = sprintly branch - create a branch automatically based on the bug you're working on
 alias spb="git checkout -b \`sp | tail -2 | grep '#' | sed 's/^ //' | sed 's/[^A-Za-z0-9 ]//g' | sed 's/ /-/g' | cut -d"-" -f1,2,3,4,5\`"
+
+# Como usar o QuickLook a partir do Terminal
+# http://br-mac.org/2013/11/como-usar-o-quicklook-a-partir-do-terminal.html
+alias ql='qlmanage -p '
