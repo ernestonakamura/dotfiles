@@ -7,6 +7,9 @@ unbind C-a
 set -g prefix C-b
 bind b send-prefix
 
+# Do not rename pane according to the running command
+set-window-option -g automatic-rename off
+
 #
 # https://github.com/tmux-plugins/tpm
 #

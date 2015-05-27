@@ -1,0 +1,46 @@
+# ~/.tmuxinator/fenix_administrativo.yml
+
+name: fenix_administrativo
+root: ~/Projects/JadCargas/Fenix/fenix_administrativo
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+pre: vagrant up
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: logs
+
+windows:
+  - services:
+      name: services
+      layout: even-vertical
+      panes:
+        - server:
+          - vagrant ssh
+          - cd /vagrant/fenix_administrativo
+          - passenger stop
+          - foreman start
+        - foreman start -f Procfile.test
+  - development:
+    - mvim
+    - vagrant ssh
+    - cd /vagrant/fenix_administrativo
+    - clear
+    - git status
+  - gema_fenix:
+    - cd ../gema_fenix
+    - vagrant ssh
+    - cd /vagrant/gema_fenix
+    - clear
+    - git status
