@@ -20,8 +20,13 @@ alias cdb='cd -'
 
 # Show human friendly numbers and colors
 alias df='df -h'
-alias ll='ls -alGh'
-alias ls='ls -Gh'
+if is-callable 'dircolors'; then
+  alias ls='ls -h --color=auto'
+  alias ll='ls -alh --color=auto'
+else
+  alias ls='ls -Gh'
+  alias ll='ls -alGh'
+fi
 alias du='du -h -d 2'
 
 # show me files matching "ls grep"
