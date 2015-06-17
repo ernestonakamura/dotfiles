@@ -165,3 +165,6 @@ alias spb="git checkout -b \`sp | tail -2 | grep '#' | sed 's/^ //' | sed 's/[^A
 # Como usar o QuickLook a partir do Terminal
 # http://br-mac.org/2013/11/como-usar-o-quicklook-a-partir-do-terminal.html
 alias ql='qlmanage -p '
+
+# Vagrant
+alias vg='vagrant'
