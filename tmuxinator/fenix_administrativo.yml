@@ -33,14 +33,9 @@ windows:
           - foreman start
         - foreman start -f Procfile.test
   - development:
-    - mvim
     - vagrant ssh
     - cd /vagrant/fenix_administrativo
     - clear
     - git status
-  - gema_fenix:
-    - cd ../gema_fenix
-    - vagrant ssh
-    - cd /vagrant/gema_fenix
-    - clear
-    - git status
+  - host:
+    - mvim
