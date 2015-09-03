@@ -168,3 +168,8 @@ alias ql='qlmanage -p '
 
 # Vagrant
 alias vg='vagrant'
+alias vup='vagrant up'
+alias vsh='vagrant ssh'
+alias vst='vagrant status'
+alias vht='vagrant halt'
+
