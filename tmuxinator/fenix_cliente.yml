@@ -1,0 +1,41 @@
+# ~/.tmuxinator/fenix_cliente.yml
+
+name: fenix_cliente
+root: ~/Projects/JadCargas/Fenix/fenix_cliente
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+pre: vagrant up
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: logs
+
+windows:
+  - services:
+      name: services
+      layout: even-vertical
+      panes:
+        - server:
+          - vagrant ssh
+          - cd /vagrant/fenix_cliente
+          - passenger stop
+          - foreman start
+        - foreman start -f Procfile.test
+  - development:
+    - vagrant ssh
+    - cd /vagrant/fenix_cliente
+    - clear
+    - git status
+  - host:
+    - mvim
