@@ -120,6 +120,7 @@ alias gz='tar -zcvf'
 
 # Ruby
 alias c='rails c' # Rails 3
+alias sc='spring rails c'
 alias co='script/console --irb=pry' # Rails 2
 alias ts='thin start'
 alias ms='mongrel_rails start'
@@ -141,9 +142,6 @@ alias todo='open nvalt://find/todo'
 # Forward port 80 to 3000
 alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 80 in'
 
-alias rdm='rake db:migrate'
-alias rdmr='rake db:migrate:redo'
-
 # Zeus
 alias zs='zeus server'
 alias zc='zeus console'
@@ -152,9 +150,14 @@ alias zc='zeus console'
 alias rs='rspec'
 alias sr='spring rspec'
 alias sk='spring rake'
-alias srgm='spring rails g migration'
+
+# Rake
+alias rdm='rake db:migrate'
+alias rdmr='rake db:migrate:redo'
 alias srdm='spring rake db:migrate'
-alias srdt='spring rake db:migrate'
+alias srdms='spring rake db:migrate:status'
+alias srg='spring rails g'
+alias srgm='spring rails g migration'
 alias srdmt='spring rake db:migrate db:test:prepare'
 
 # Sprintly - https://github.com/nextbigsoundinc/Sprintly-GitHub
@@ -168,3 +171,7 @@ alias ql='qlmanage -p '
 
 # Vagrant
 alias vg='vagrant'
+
+# Bundle
+alias bd='bundle'
+alias be='bundle exec'
