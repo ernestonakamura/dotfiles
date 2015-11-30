@@ -1,7 +1,7 @@
-# ~/.tmuxinator/fenix_administrativo.yml
+# ~/.tmuxinator/fenix_tracking.yml
 
-name: fenix_administrativo
-root: ~/Projects/JadCargas/Fenix/fenix_administrativo
+name: fenix_tracking
+root: ~/Projects/JadCargas/Fenix/fenix_tracking
 
 # Optional tmux socket
 # socket_name: foo
@@ -28,13 +28,13 @@ windows:
       panes:
         - server:
           - vagrant ssh
-          - cd /vagrant/fenix_administrativo
+          - cd /vagrant/fenix_tracking
           - passenger stop
           - foreman start
         - foreman start -f Procfile.test
   - development:
     - vagrant ssh
-    - cd /vagrant/fenix_administrativo
+    - cd /vagrant/fenix_tracking
     - clear
     - git status
   - host:

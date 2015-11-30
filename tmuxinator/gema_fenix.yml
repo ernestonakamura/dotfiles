@@ -1,7 +1,7 @@
-# ~/.tmuxinator/fenix_administrativo.yml
+# ~/.tmuxinator/gema_fenix.yml
 
-name: fenix_administrativo
-root: ~/Projects/JadCargas/Fenix/fenix_administrativo
+name: gema_fenix
+root: ~/Projects/JadCargas/Fenix/gema_fenix
 
 # Optional tmux socket
 # socket_name: foo
@@ -22,19 +22,9 @@ pre: vagrant up
 # startup_window: logs
 
 windows:
-  - services:
-      name: services
-      layout: even-vertical
-      panes:
-        - server:
-          - vagrant ssh
-          - cd /vagrant/fenix_administrativo
-          - passenger stop
-          - foreman start
-        - foreman start -f Procfile.test
   - development:
     - vagrant ssh
-    - cd /vagrant/fenix_administrativo
+    - cd /vagrant/gema_fenix
     - clear
     - git status
   - host:

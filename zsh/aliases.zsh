@@ -175,3 +175,7 @@ alias vg='vagrant'
 # Bundle
 alias bd='bundle'
 alias be='bundle exec'
+alias vup='vagrant up'
+alias vsh='vagrant ssh'
+alias vst='vagrant status'
+alias vht='vagrant halt'

@@ -1,7 +1,8 @@
-# ~/.tmuxinator/fenix_administrativo.yml
+# ~/.tmuxinator/freedom.yml
 
-name: fenix_administrativo
-root: ~/Projects/JadCargas/Fenix/fenix_administrativo
+name: freedom
+root: ~/Projects/Aeroasa/freedom
+
 
 # Optional tmux socket
 # socket_name: foo
@@ -22,20 +23,8 @@ pre: vagrant up
 # startup_window: logs
 
 windows:
-  - services:
-      name: services
-      layout: even-vertical
-      panes:
-        - server:
-          - vagrant ssh
-          - cd /vagrant/fenix_administrativo
-          - passenger stop
-          - foreman start
-        - foreman start -f Procfile.test
+  - server:
+    - rails s -p 4000
   - development:
-    - vagrant ssh
-    - cd /vagrant/fenix_administrativo
-    - clear
-    - git status
-  - host:
+    - open http://localhost:4000/
     - mvim
