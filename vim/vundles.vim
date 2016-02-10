@@ -114,6 +114,7 @@ Bundle "terryma/vim-multiple-cursors"
 "vim-misc is required for vim-session
 Bundle "xolox/vim-misc"
 Bundle "xolox/vim-session"
+Bundle 'danro/rename.vim'
 
 " Text objects
 Bundle "austintaylor/vim-indentobject"
